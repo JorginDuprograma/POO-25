@@ -1,11 +1,8 @@
 package sistema_iptu;
 
-public class Casa {
-    private Municipio municipio;
-    private Double areaM2;
-    private Integer vagas;
+public class Casa extends Imovel{
 
-    public Double calcularIptu(){
-        return this.areaM2 * this.municipio.getmunicipio;
+    public Casa(Municipio municipio, Double areaM2, Integer vagas) {
+        super(municipio, areaM2, vagas);
     }
 }
